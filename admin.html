@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | EventHub India</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>🎉 EventHub</h2>
+
+<ul>
+
+<li class="active"><i class="fa-solid fa-chart-line"></i> Dashboard</li>
+
+<li><i class="fa-solid fa-calendar-plus"></i> Add Event</li>
+
+<li><i class="fa-solid fa-list"></i> Manage Events</li>
+
+<li><i class="fa-solid fa-users"></i> Participants</li>
+
+<li><i class="fa-solid fa-gear"></i> Settings</li>
+
+<li><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>Admin Dashboard</h1>
+
+<!-- Statistics -->
+
+<div class="cards">
+
+<div class="card">
+
+<h2>120</h2>
+
+<p>Total Events</p>
+
+</div>
+
+<div class="card">
+
+<h2>2,450</h2>
+
+<p>Registrations</p>
+
+</div>
+
+<div class="card">
+
+<h2>15</h2>
+
+<p>Upcoming Events</p>
+
+</div>
+
+<div class="card">
+
+<h2>₹1,85,000</h2>
+
+<p>Total Revenue</p>
+
+</div>
+
+</div>
+
+<!-- Add Event -->
+
+<div class="form-section">
+
+<h2>Add New Event</h2>
+
+<form id="eventForm">
+
+<input type="text" placeholder="Festival Name" required>
+
+<input type="date" required>
+
+<input type="text" placeholder="Venue" required>
+
+<input type="number" placeholder="Ticket Price">
+
+<textarea placeholder="Event Description"></textarea>
+
+<button type="submit">Add Event</button>
+
+</form>
+
+</div>
+
+<!-- Event Table -->
+
+<div class="table-section">
+
+<h2>Manage Events</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Festival</th>
+
+<th>Date</th>
+
+<th>Venue</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Holi</td>
+
+<td>14 Mar 2027</td>
+
+<td>Mathura</td>
+
+<td>Active</td>
+
+<td>
+
+<button>Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Navratri</td>
+
+<td>03 Oct 2027</td>
+
+<td>Ahmedabad</td>
+
+<td>Active</td>
+
+<td>
+
+<button>Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Diwali</td>
+
+<td>01 Nov 2027</td>
+
+<td>Delhi</td>
+
+<td>Upcoming</td>
+
+<td>
+
+<button>Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

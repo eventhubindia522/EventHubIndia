@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | EventHub India</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="events.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-calendar-days"></i>
+            EventHub <span>India</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="events-hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                <i class="fa-solid fa-star"></i>
+                CELEBRATE INDIA
+            </p>
+
+            <h1>Explore Indian Events</h1>
+
+            <p>
+                Discover India's most colorful festivals,
+                cultural celebrations and unforgettable events.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH & FILTER ================= -->
+
+    <section class="event-search">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Holi, Navratri, Diwali..."
+            >
+
+        </div>
+
+        <select id="categoryFilter">
+
+            <option value="all">All Events</option>
+            <option value="festival">Festivals</option>
+            <option value="cultural">Cultural Events</option>
+
+        </select>
+
+    </section>
+
+
+    <!-- ================= EVENTS ================= -->
+
+    <section class="events-section">
+
+        <div class="section-heading">
+
+            <p>DISCOVER</p>
+
+            <h2>Upcoming Events</h2>
+
+            <span>
+                Find and register for amazing Indian festivals.
+            </span>
+
+        </div>
+
+
+        <div class="event-grid" id="eventContainer">
+
+
+            <!-- HOLI -->
+
+            <div class="event-card" data-category="festival">
+
+                <div class="event-image">
+
+                    <img src="images/gallery/holi.jpg" alt="Holi Festival">
+
+                    <span class="event-date">
+                        14 MAR
+                    </span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="tag">
+                        Festival
+                    </span>
+
+                    <h3>Holi Celebration</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Mathura, Uttar Pradesh
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        14 March 2027
+                    </p>
+
+                    <p class="description">
+                        Celebrate the festival of colors with
+                        music, dance, organic colors and food.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <strong>₹500</strong>
+
+                        <a href="event-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVRATRI -->
+
+            <div class="event-card" data-category="festival">
+
+                <div class="event-image">
+
+                    <img src="images/navratri.jpg" alt="Navratri Festival">
+
+                    <span class="event-date">
+                        03 OCT
+                    </span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="tag">
+                        Festival
+                    </span>
+
+                    <h3>Navratri Garba Night</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ahmedabad, Gujarat
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        03 October 2027
+                    </p>
+
+                    <p class="description">
+                        Enjoy traditional Garba, Dandiya,
+                        music and delicious Gujarati food.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <strong>₹700</strong>
+
+                        <a href="event-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIWALI -->
+
+            <div class="event-card" data-category="festival">
+
+                <div class="event-image">
+
+                    <img src="images/diwali.jpg" alt="Diwali Festival">
+
+                    <span class="event-date">
+                        01 NOV
+                    </span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="tag">
+                        Festival
+                    </span>
+
+                    <h3>Grand Diwali Festival</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        New Delhi
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        01 November 2027
+                    </p>
+
+                    <p class="description">
+                        Celebrate Diwali with beautiful lights,
+                        cultural programs and traditional food.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <strong>₹300</strong>
+
+                        <a href="event-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- GANESH CHATURTHI -->
+
+            <div class="event-card" data-category="festival">
+
+                <div class="event-image">
+
+                    <img src="images/ganesh.jpg"
+                         alt="Ganesh Chaturthi">
+
+                    <span class="event-date">
+                        07 SEP
+                    </span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="tag">
+                        Festival
+                    </span>
+
+                    <h3>Ganesh Chaturthi</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Pune, Maharashtra
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        07 September 2027
+                    </p>
+
+                    <p class="description">
+                        Experience Ganesh Aarti, cultural programs,
+                        music and traditional celebrations.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <strong>₹250</strong>
+
+                        <a href="event-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DURGA PUJA -->
+
+            <div class="event-card" data-category="cultural">
+
+                <div class="event-image">
+
+                    <img src="images/durga.jpg" alt="Durga Puja">
+
+                    <span class="event-date">
+                        OCT
+                    </span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="tag">
+                        Cultural
+                    </span>
+
+                    <h3>Durga Puja Celebration</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Kolkata, West Bengal
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        October 2027
+                    </p>
+
+                    <p class="description">
+                        Enjoy traditional Durga Puja celebrations,
+                        art, music and cultural performances.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <strong>₹400</strong>
+
+                        <a href="event-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ONAM -->
+
+            <div class="event-card" data-category="cultural">
+
+                <div class="event-image">
+
+                    <img src="images/onam.jpg" alt="Onam Festival">
+
+                    <span class="event-date">
+                        AUG
+                    </span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="tag">
+                        Cultural
+                    </span>
+
+                    <h3>Onam Festival</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Kochi, Kerala
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        August 2027
+                    </p>
+
+                    <p class="description">
+                        Experience Kerala's traditional Onam
+                        celebrations, dance and cultural programs.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <strong>₹350</strong>
+
+                        <a href="event-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div id="noResults" class="no-results">
+
+            <i class="fa-solid fa-face-frown"></i>
+
+            <h3>No Events Found</h3>
+
+            <p>
+                Try searching for another festival.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <h2>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    EventHub India
+                </h2>
+
+                <p>
+                    Discover, celebrate and register for
+                    India's most exciting events and festivals.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Account</h3>
+
+                <a href="login.html">Login</a>
+                <a href="signup.html">Register</a>
+                <a href="register.html">Event Registration</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2027 EventHub India. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="events.js"></script>
+
+</body>
+
+</html>
+```

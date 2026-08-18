@@ -1,0 +1,110 @@
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+}
+
+@media (max-width:992px){
+
+.navbar{
+    padding:15px 5%;
+}
+
+.nav-links{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.hero{
+    height:80vh;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.cards,
+.event-container,
+.gallery,
+.team-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.contact{
+    flex-direction:column;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero{
+    padding:20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.cards,
+.event-container,
+.gallery,
+.team-container{
+    grid-template-columns:1fr;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+footer{
+    text-align:center;
+}
+
+}
+
+@media (max-width:576px){
+
+.logo{
+    font-size:20px;
+}
+
+.hero h1{
+    font-size:28px;
+}
+
+.hero button{
+    width:100%;
+}
+
+input,
+select,
+textarea,
+button{
+    width:100%;
+}
+
+}
